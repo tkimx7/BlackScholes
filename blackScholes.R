@@ -12,16 +12,6 @@ library(data.table)
 
 options(digits = 15)
 
-################################################################################
-### https://quant.stackexchange.com/questions/7761/a-simple-formula-for-calculating-implied-volatility
-### https://quant.stackexchange.com/questions/58634/newtons-algorithm-for-implied-volatility
-### https://quant.stackexchange.com/questions/45514/why-isnt-this-iv-calc-correct/45515#45515
-### https://math.stackexchange.com/questions/2223296/cdf-of-standard-normal
-### https://quant.stackexchange.com/questions/45514/why-isnt-this-iv-calc-correct/45515#45515
-### A&S Standard Normal Definition 26.2.1
-### 
-################################################################################
-
 N <- function(d_) {
   
   c1 <- 0.5 # 1/2
@@ -37,8 +27,6 @@ N <- function(d_) {
 }
 
 V <- function(type_ = "c", s_ = 300, k_ = 250, r_ = 0, t1_ = 1, t0_ = 0, v_ = 0.15) {
-  
-  # https://goodcalculators.com/black-scholes-calculator/
   
   t_     <- as.numeric(t1_-t0_)
   d1_    <- (log(s_/k_) + (r_ + 1/2 * v_^2) * t_)  / (v_ * sqrt(t_))
