@@ -1,14 +1,4 @@
-#.rs.restartR()
 rm(list = ls())
-
-library(DBI)
-library(doltr)
-library(tictoc)
-library(doSNOW)
-library(foreach)
-library(tidyverse)
-library(doParallel)
-library(data.table)
 
 options(digits = 15)
 
