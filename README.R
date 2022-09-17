@@ -2,5 +2,5 @@
 ###### --- README --- ######################################################################################
 ############################################################################################################
 # 
-# --- Very simple Black Scholes in both R and C++ with Normal CDF computed numerically by Taylor Series and 
+# --- Very simple Black Scholes in both R and C++ with Normal CDF computed numerically Taylor Series-wise and 
 # --- based on Put Call Parity.
